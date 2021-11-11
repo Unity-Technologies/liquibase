@@ -72,6 +72,11 @@
           <groupId>org.springframework</groupId>
           <artifactId>spring</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.vault</groupId>
+            <artifactId>spring-vault-core</artifactId>
+            <version>2.3.2</version>
+        </dependency>
 
         <dependency>
             <groupId>org.hsqldb</groupId>
@@ -83,7 +88,11 @@
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.10</version>
+        </dependency>
     </dependencies>
 
 
@@ -130,25 +139,6 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>api</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>javadoc</goal>
-                        </goals>
-                        <configuration>
-                            <sourcepath>../liquibase-core/src/main/java</sourcepath>
-                            <encoding>UTF-8</encoding>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-       
 
             <!--<plugin>-->
                 <!--<groupId>org.apache.felix</groupId>-->
