@@ -41,7 +41,6 @@ public class UnityMain {
         VaultServiceImpl vaultService = new VaultServiceImpl();
         Properties properties = vaultService.readVaultProperties();
         for (File confFile : confDir.listFiles()) {
-            System.out.println("filePath:\t" + confFile.getAbsolutePath());
             String password;
             PropertiesConfiguration propertiesConfiguration = new PropertiesConfiguration(confFile);
             String changeLogFileName = confFile.getName().split("\\.")[0] + ".xml";
