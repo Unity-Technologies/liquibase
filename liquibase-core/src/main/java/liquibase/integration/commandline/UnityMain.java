@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 public class UnityMain {
     public static void main(String[] args) throws ConfigurationException, IOException, CommandLineParsingException, InterruptedException {
-        if (args.length > 4 || args.length < 2) {
+        if (args.length > 3 || args.length < 1) {
             printUsage();
             return;
         }
@@ -94,6 +94,6 @@ public class UnityMain {
     }
 
     private static void printUsage() {
-        System.out.println("<env> <key> [--debug] [-contexts:contexts]");
+        System.out.println("[--debug] [-contexts:contexts]");
     }
 }
