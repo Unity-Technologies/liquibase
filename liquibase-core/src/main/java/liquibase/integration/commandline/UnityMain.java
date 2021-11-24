@@ -22,7 +22,7 @@ public class UnityMain {
         }
         boolean debug = false;
         String contexts = "PCI,NONPCI";
-        for (int i = 2; i < args.length; i++) {
+        for (int i = 1; i < args.length; i++) {
             if (args[i].equalsIgnoreCase("--debug")) {
                 debug = true;
             } else if (args[i].startsWith("--contexts:")) {
